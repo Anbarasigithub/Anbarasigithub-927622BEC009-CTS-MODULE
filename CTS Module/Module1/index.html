@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Community Hub 🎉 - Discover the Heartbeat of Your Neighborhood 💖</h1>
+  </header>
+
+  <nav class="emoji-nav">
+    <a href="#home" class="nav-item">🏠 Home</a>
+    <a href="#upcoming-events" class="nav-item">🗓️ Upcoming</a>
+    <a href="#past-events" class="nav-item">📸 Past</a>
+    <a href="#register" class="nav-item">📝 Register</a>
+    <a href="#contact" class="nav-item">📞 Contact</a>
+    <a href="help.html" target="_blank" class="nav-item">❓ Help</a>
+  </nav>
+
+  <main>
+    <section id="home" class="content-section">
+      <h2>Welcome to Your Community Hub 🎉</h2>
+      <p>Stay connected, get involved, and celebrate the heart of our neighborhood!</p>
+      <div id="welcomeBanner">
+        <h3>We’re Glad You’re Here!</h3>
+        <p>Don't miss our <span style="color: red; font-weight: bold;">Exclusive surprises</span> await our early registrants!</p>
+        <p>Come and experience the true <span class="highlight">power of community</span>.</p>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section id="upcoming-events" class="content-section">
+      <h2>Upcoming Events 🗓️</h2>
+      <p>Get ready for these exciting events:</p>
+      <ul>
+        <li><strong>Local Fair</strong> - July 15, 2025 - Central Park</li>
+        <li><strong>Community Clean-up Day</strong> - August 5, 2025 - Various Locations</li>
+        <li><strong>Kids' Story Time</strong> - Every Saturday, 10 AM - Community Library</li>
+      </ul>
+
+      <div class="video-container">
+        <h3>Event Promo Video</h3>
+        <video id="promoVideo" controls width="100%">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+        <p id="videoStatus"></p>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section id="past-events" class="content-section">
+      <h2>Past Event Highlights 📸</h2>
+      <table>
+        <caption>Memories from Our Community</caption>
+        <tr>
+          <td>
+            <img src="download.jpg" alt="Picnic" title="Community Picnic" class="event-image" />
+            <p>Picnic 2024</p>
+          </td>
+          <td>
+            <img src="marathon.jpg" alt="Marathon" title="Annual Marathon" class="event-image" />
+            <p>Marathon</p>
+          </td>
+          <td>
+            <img src="art.jpg" alt="Workshop" title="Art Workshop" class="event-image" />
+            <p>Art Workshop</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <hr/>
+
+    <section id="register" class="content-section">
+      <h2>Event Registration 📝</h2>
+      <form id="eventRegistrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required autofocus />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType" required>
+          <option value="">--Select--</option>
+          <option value="Picnic" data-fee="10">Picnic</option>
+          <option value="Marathon" data-fee="25">Marathon</option>
+          <option value="Fair" data-fee="5">Local Fair</option>
+          <option value="Clean-up" data-fee="0">Clean-up Day</option>
+        </select>
+        <p id="eventFee">Fee: $0</p>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" placeholder="Comments (max 100 chars)"></textarea>
+        <p>Chars left: <span id="charCount">100</span></p>
+
+        <button type="submit">Register!</button>
+        <button type="button" id="clearPrefs">Clear Prefs</button>
+      </form>
+      <output id="confirmationMessage"></output>
+    </section>
+
+    <hr/>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Us 📞</h2>
+      <p>Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
+      <button id="findNearbyEvents">Find Nearby Events 📍</button>
+      <p id="geolocationStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Community portal.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

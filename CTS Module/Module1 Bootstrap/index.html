@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 5 Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Welcome to Bootstrap 5</h1>
+    <p class="lead text-center">This is a basic HTML page using Bootstrap 5 loaded from a CDN.</p>
+
+  <!-- Bootstrap 5 JS Bundle with Popper via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Bootstrap Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Link to downloaded Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-primary text-center">Bootstrap from Local Files</h1>
+    <p class="lead text-center">This project uses Bootstrap via downloaded files.</p>
+
+  <!-- Link to downloaded Bootstrap Bundle JS (includes Popper) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Directory Structure</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4">Bootstrap Directory Structure</h1>
+
+    <div class="accordion" id="bootstrapStructure">
+      <!-- CSS Folder -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCss">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCss">
+            1. css/ Folder
+          </button>
+        </h2>
+        <div id="collapseCss" class="accordion-collapse collapse show" data-bs-parent="#bootstrapStructure">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>bootstrap.css:</strong> Full unminified CSS for customization.</li>
+              <li><strong>bootstrap.min.css:</strong> Minified production-ready CSS (used in production for speed).</li>
+              <li><strong>bootstrap.rtl.css:</strong> RTL (Right-to-Left) support for languages like Arabic or Hebrew.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- JS Folder -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingJs">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJs">
+            2. js/ Folder
+          </button>
+        </h2>
+        <div id="collapseJs" class="accordion-collapse collapse" data-bs-parent="#bootstrapStructure">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>bootstrap.bundle.min.js:</strong> Contains all Bootstrap JS plugins + Popper (used for tooltips, dropdowns, etc.).</li>
+              <li><strong>bootstrap.min.js:</strong> Bootstrap JS only (requires separate Popper).</li>
+              <li><strong>bootstrap.esm.js:</strong> Module version for advanced bundlers like Webpack or Rollup.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icons Folder -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingIcons">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIcons">
+            3. icons/ Folder
+          </button>
+        </h2>
+        <div id="collapseIcons" class="accordion-collapse collapse" data-bs-parent="#bootstrapStructure">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>bootstrap-icons.css:</strong> CSS file to load Bootstrap Icons.</li>
+              <li><strong>fonts/ or svgs/:</strong> Contains SVG files or font icons used by Bootstrap Icons.</li>
+              <li><strong>Note:</strong> This folder is available only if you download Bootstrap Icons separately from <a href="https://icons.getbootstrap.com/" target="_blank">icons.getbootstrap.com</a>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap JS Plugin Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="mb-4">Bootstrap JavaScript Plugin Example</h1>
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="p-3 border bg-light">Column 1</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="p-3 border bg-light">Column 2</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="p-3 border bg-light">Column 3</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-3 bg-secondary text-white p-3">
+      Sidebar
+    </div>
+    <div class="col-md-9 bg-light p-3">
+      Main Content
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-sm-3 p-3 border">Col 1</div>
+    <div class="col-sm-3 p-3 border">Col 2</div>
+    <div class="col-sm-3 p-3 border">Col 3</div>
+    <div class="col-sm-3 p-3 border">Col 4</div>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row justify-content-center align-items-center" style="height: 150px;">
+    <div class="col-6 text-center p-3 border bg-light">
+      Centered Content
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 order-md-2 bg-warning p-3">Second on desktop, first on mobile</div>
+    <div class="col-md-6 order-md-1 bg-info p-3">First on desktop, second on mobile</div>
+  </div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar bg-light px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand me-3" href="#">MySite</a>
+      <div class="d-flex flex-column flex-md-row gap-2">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card with Flex Alignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container my-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Product Name</h5>
+        <p class="card-text">This is a brief description of the product. It uses Bootstrap flex utilities for layout.</p>
+      </div>
+
+      <!-- Flex row in footer using justify-content-between and align-items-center -->
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="text-muted">Last updated 2 mins ago</span>
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Typography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+  <h1 class="display-1 text-primary">Display 1 Heading</h1>
+  <p class="lead">This is a lead paragraph to stand out from normal text.</p>
+  <p class="text-muted">This text is muted using <code>.text-muted</code>.</p>
+  <p class="fw-bold">This paragraph is <strong>bold</strong> using <code>.fw-bold</code>.</p>
+
+  <hr>
+
+  <p class="text-uppercase">this text is uppercase</p>
+  <p class="text-lowercase">THIS TEXT IS LOWERCASE</p>
+  <p class="text-capitalize">this text is capitalized</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+  <div class="container">
+    <h2 class="mb-4">Registration Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <div class="input-group">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="username">
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms">
+        <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Login Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+  <div class="container" style="max-width: 400px;">
+    <h2 class="mb-4 text-center">Login</h2>
+    <form>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+        <label for="floatingEmail">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <button class="btn btn-primary w-100" type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap Contextual Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="p-4">
+
+  <h2>Solid Buttons</h2>
+  <button class="btn btn-primary me-2 mb-2">Primary</button>
+  <button class="btn btn-secondary me-2 mb-2">Secondary</button>
+  <button class="btn btn-success me-2 mb-2">Success</button>
+  <button class="btn btn-danger me-2 mb-2">Danger</button>
+  <button class="btn btn-warning me-2 mb-2">Warning</button>
+  <button class="btn btn-info me-2 mb-2">Info</button>
+  <button class="btn btn-light me-2 mb-2">Light</button>
+  <button class="btn btn-dark me-2 mb-2">Dark</button>
+  <button class="btn btn-link mb-2">Link</button>
+
+  <h2 class="mt-4">Outline Buttons</h2>
+  <button class="btn btn-outline-primary me-2 mb-2">Primary</button>
+  <button class="btn btn-outline-secondary me-2 mb-2">Secondary</button>
+  <button class="btn btn-outline-success me-2 mb-2">Success</button>
+  <button class="btn btn-outline-danger me-2 mb-2">Danger</button>
+  <button class="btn btn-outline-warning me-2 mb-2">Warning</button>
+  <button class="btn btn-outline-info me-2 mb-2">Info</button>
+  <button class="btn btn-outline-light me-2 mb-2">Light</button>
+  <button class="btn btn-outline-dark me-2 mb-2">Dark</button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap Button Groups & Toggle Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="p-4">
+
+  <h2>Button Group</h2>
+  <div class="btn-group mb-4" role="group" aria-label="Basic button group">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+
+  <h2>Toggle Buttons with Checkboxes</h2>
+  <div class="btn-group" role="group" aria-label="Checkbox toggle button group">
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap Nav Tabs and Pills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="p-4">
+
+  <h2>Nav Tabs Example</h2>
+  <ul class="nav nav-tabs" id="tabsExample" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="home-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#home"
+        type="button"
+        role="tab"
+        aria-controls="home"
+        aria-selected="true"
+      >
+        Home
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="profile-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#profile"
+        type="button"
+        role="tab"
+        aria-controls="profile"
+        aria-selected="false"
+      >
+        Profile
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="contact-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#contact"
+        type="button"
+        role="tab"
+        aria-controls="contact"
+        aria-selected="false"
+      >
+        Contact
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content border p-3" id="tabsExampleContent">
+    <div
+      class="tab-pane fade show active"
+      id="home"
+      role="tabpanel"
+      aria-labelledby="home-tab"
+      tabindex="0"
+    >
+      <p>This is the Home tab content.</p>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="profile"
+      role="tabpanel"
+      aria-labelledby="profile-tab"
+      tabindex="0"
+    >
+      <p>This is the Profile tab content.</p>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="contact"
+      role="tabpanel"
+      aria-labelledby="contact-tab"
+      tabindex="0"
+    >
+      <p>This is the Contact tab content.</p>
+    </div>
+  </div>
+
+  <hr class="my-5" />
+
+  <h2>Nav Pills Example</h2>
+  <ul class="nav nav-pills" id="pillsExample" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="pill-home-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pill-home"
+        type="button"
+        role="tab"
+        aria-controls="pill-home"
+        aria-selected="true"
+      >
+        Home
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="pill-profile-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pill-profile"
+        type="button"
+        role="tab"
+        aria-controls="pill-profile"
+        aria-selected="false"
+      >
+        Profile
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="pill-contact-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pill-contact"
+        type="button"
+        role="tab"
+        aria-controls="pill-contact"
+        aria-selected="false"
+      >
+        Contact
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content border p-3 mt-3" id="pillsExampleContent">
+    <div
+      class="tab-pane fade show active"
+      id="pill-home"
+      role="tabpanel"
+      aria-labelledby="pill-home-tab"
+      tabindex="0"
+    >
+      <p>This is the Home pills content.</p>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="pill-profile"
+      role="tabpanel"
+      aria-labelledby="pill-profile-tab"
+      tabindex="0"
+    >
+      <p>This is the Profile pills content.</p>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="pill-contact"
+      role="tabpanel"
+      aria-labelledby="pill-contact-tab"
+      tabindex="0"
+    >
+      <p>This is the Contact pills content.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top" alt="Profile Image">
+  <div class="card-body">
+    <h5 class="card-title">Alexander </h5>
+    <p class="card-text">Full Stack Developer with a passion for creating beautiful and functional web apps.</p>
+    <a href="#" class="btn btn-primary">Follow</a>
+  </div>
+</div>
+
+
+<div class="d-flex align-items-start mb-3">
+  <img src="https://randomuser.me/api/portraits/women/98.jpg" alt="User Image" class="me-3 rounded" width="64" height="64">
+  <div>
+    <h5>Miranda</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor facilisis, luctus lacus non, malesuada eros.</p>
+  </div>
+</div>
+
+
+<section class="m-3 p-2 bg-light border">
+  <h3 class="mt-4">Section with Margin and Padding</h3>
+  <p class="py-5">This section has margin 3 and padding 2 applied on the container, and vertical padding 5 inside the paragraph.</p>
+</section>
+
+
+<div class="container py-5">
+  <h2 class="mb-5 text-center">Pricing Plans</h2>
+  <div class="row g-4">
+    <div class="col-md-4 p-3 border rounded">
+      <h3>Basic</h3>
+      <p class="fs-2">$9.99<span class="fs-6">/month</span></p>
+      <ul>
+        <li>10 Projects</li>
+        <li>5 GB Storage</li>
+        <li>Email Support</li>
+      </ul>
+      <button class="btn btn-outline-primary mt-3">Choose Basic</button>
+    </div>
+    <div class="col-md-4 p-3 border rounded">
+      <h3>Standard</h3>
+      <p class="fs-2">$32.99<span class="fs-6">/month</span></p>
+      <ul>
+        <li>50 Projects</li>
+        <li>15 GB Storage</li>
+        <li>Priority Email Support</li>
+      </ul>
+      <button class="btn btn-primary mt-3">Choose Standard</button>
+    </div>
+    <div class="col-md-4 p-3 border rounded">
+      <h3>Premium</h3>
+      <p class="fs-2">$779.99<span class="fs-6">/month</span></p>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>100 GB Storage</li>
+        <li>24/7 Phone Support</li>
+      </ul>
+      <button class="btn btn-outline-primary mt-3">Choose Premium</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row g-3">
+    <div class="col-md-4 p-3 bg-primary text-white rounded">Primary Section</div>
+    <div class="col-md-4 p-3 bg-warning text-dark rounded">Warning Section</div>
+    <div class="col-md-4 p-3 bg-success text-white rounded">Success Section</div>
+  </div>
+</div>
+
+
+<div class="p-5 bg-gradient bg-dark text-white text-center rounded">
+  <h2>Dark Gradient Background</h2>
+  <p>This section uses Bootstrap's bg-gradient with dark background and white text.</p>
+</div>
+
+
+<div class="container my-4">
+  <div class="d-none d-md-block p-3 bg-info text-white mb-3 rounded">
+    Visible only on md (tablet) and larger screens
+  </div>
+  <div class="d-md-none p-3 bg-secondary text-white mb-3 rounded">
+    Visible only on small screens (less than md)
+  </div>
+  <div class="d-none d-lg-flex p-3 bg-success text-white rounded justify-content-center">
+    Visible only on large (lg) and larger, flex container
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row">
+    <aside class="col-md-3 d-none d-md-block bg-light p-3 border rounded">
+      <h5>Sidebar</h5>
+      <ul class="list-unstyled">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+    <main class="col-md-9">
+      <h3>Main Content Area</h3>
+      <p>This content is always visible.</p>
+    </main>
+  </div>
+</div>
+
+
+<img src="https://randomuser.me/api/portraits/women/68.jpg" 
+     alt="Profile" 
+     class="border border-primary border-3 rounded-circle" 
+     width="150" 
+     height="150">
+
+
+     <div class="card shadow rounded" style="width: 18rem;">
+  <img src="https://randomuser.me/api/portraits/men/76.jpg" class="card-img-top rounded" alt="User">
+  <div class="card-body">
+    <h5 class="card-title"> Henry </h5>
+    <p class="card-text">This card features shadow and rounded corners using Bootstrap utilities.</p>
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+
+
+<footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 w-100">
+  Fixed Footer - Always visible at the bottom
+</footer>
+
+
+<div class="position-relative d-inline-block">
+  <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Profile" width="150" class="rounded">
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    3
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</div>
+
+
+
+<footer class="bg-light text-center py-4">
+  <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-3"></i></a>
+  <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-3"></i></a>
+  <a href="#" class="text-dark"><i class="bi bi-instagram fs-3"></i></a>
+</footer>
+
+
+<button type="button" class="btn btn-primary me-2" aria-label="Search">
+  <i class="bi bi-search"></i>
+</button>
+
+<button type="button" class="btn btn-success" aria-label="Check">
+  <i class="bi bi-check-lg"></i>
+</button>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch Modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is the modal content.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Content for accordion item 1.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Content for accordion item 2.
+      </div>
+    </div>
+  </div>
+</div>
